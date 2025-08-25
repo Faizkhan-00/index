@@ -1,0 +1,2349 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+   
+      <title>Bizpulse</title>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap');
+         *{
+         padding:0px;
+         margin:0px;
+         box-sizing:border-box;
+         font-family: "Oxygen", sans-serif; 
+         }
+         .header{
+         width:100%;
+         }
+         .container{
+         width:1200px;
+         margin:0px auto;
+         }
+         .main-header{
+         width:100%;
+         background:#fff;
+         display:flex;
+         gap:10px;
+         align-items:center;
+         justify-content: space-between;
+         }
+         .social-icon{
+         width:15%;
+         }
+		 .social-icon ul {
+         display: flex;
+         list-style: none;
+         justify-content: space-around;
+		 font-size:20px;
+         }
+         .social-icon ul li i:hover {
+		 color:blue;
+		 cursor:pointer;
+		 }
+         .bizpulse{
+         width:35%;
+		 display: flex;
+         justify-content: space-evenly;
+         }
+         .bizpulse img{
+         width: 265px;
+		 cursor:pointer;
+         }
+         .search{
+         display: flex;
+         justify-content: end;
+         gap: 20px;
+         width:50%;
+         }
+         .search img{
+         width: 50px;
+         }
+         .subscribe{
+         border-radius: 13px;
+         display: flex;
+         align-items:center;
+         gap:15px;
+         }
+         .subscribe img {
+         width: 20px;
+		 cursor:pointer;
+         }
+         .subscribe button{
+         background: #000;
+         color: #fff;
+         padding: 5px;
+         font-size: 16px;
+         border-radius: 4px;
+		 border:none;
+		 width:100px;
+         }
+		 .subscribe button:hover{
+		 color:#fff;
+		 cursor:pointer;
+		 background:blue;
+		 
+		 }
+         .border{
+         width:100%;
+         }
+         .main-border{
+         width:100%;
+         }
+         .main-border ul{
+         display: flex;
+         justify-content: center;
+         gap:40px;
+         margin:30px;
+         }
+         .main-border li{
+         list-style:none;
+         font-weight:500;
+         font-size:16px;
+         }
+		 .main-border li:hover{
+		 color:#1046eb;
+		 cursor:pointer;
+		 }
+         .banner{
+         width:100%;
+         padding: 15px 0px;
+         background:#000;
+         }
+		 .exploring-banner{
+		 width:100%;
+		 display:flex;
+		 }
+         
+       
+         .banner-bg{
+         width:60%;
+         background-image: url("image/post-1.jpg");
+         background-size:cover;
+         background-repeat: no-repeat;
+        
+         }
+         .bg{
+         padding: 10px;
+         height:100%;
+         background:#060606ad;
+         align-items: center;
+         display:flex;
+         flex-direction:column;
+		 justify-content:end;
+		 padding:20px 0px;
+         }
+         .banner-text{
+         padding:10px;
+         width:100%;
+         
+         }
+         .banner-text button{
+         background: #9b8e8e4d;
+         border: none;
+         font-size: 18px;
+         color: #fff;
+         padding: 7px;
+         font-weight: lighter;
+         }
+		 
+         .banner-text p{
+         max-width: 500px;
+         font-size: 18px;
+         color: #fff;
+         font-weight: 400;
+         margin: 30px 0px;
+         line-height:30px;
+		 cursor:pointer;
+         }
+         .text-icon{
+         width:100%;
+         display: flex;
+         align-items: center;
+         }
+         .contact{
+         width:20%;
+         display: flex;
+         align-items: center;
+         }
+         .text-icon span{
+         font-size: 14px;
+         color: #fff;
+         font-weight: lighter;
+         }
+         .text-icon img{
+         width:30px;
+         height:32px;
+         }
+         .date{
+         width:25%;
+         display: flex;
+         align-items: center;
+         }
+         .date span{
+         font-size: 14px;
+         color: #fff;
+         font-weight: lighter;
+		 margin:10px;
+
+         }
+         .date img{
+         width:20px;
+         height:20px;
+         }
+         .banner-2{
+         width:40%;
+         }
+         .banner-2-1{
+         width:100%;
+         height:300px;
+         background:url(./image/post02.jpg) no-repeat center;
+         }
+         .opacity{
+         height:100%;
+         width:100%;
+         background:#000000a8;
+         display: flex;
+         align-items: anchor-center;
+         }
+         .economics{
+         width:100%;
+         padding: 136px 10px 0px 10px;
+         }
+         .economics button{
+         background: #9b8e8e4d;
+         border: none;
+         color: #fff;
+         font-size: 18px;
+         padding: 5px;
+         font-weight: lighter;
+         }
+         .economics p{
+         max-width: 500px;
+         font-size: 18px;
+         color: #fff;
+         font-weight: 300;
+         margin: 15px 0px 15px 0px;
+         line-height:30px;
+		 cursor:pointer;
+         }
+         .economics img{
+         width:20px;
+         height:20px;
+         }
+         .economics span{
+         font-size: 14px;
+         color: #fff;
+         font-weight: lighter;
+         }
+         .calender{
+         width:68%;
+         display: flex;
+         align-items: center;
+         gap:10px;
+         }
+         .banner-2-2-2{
+         width:100%;
+         background:url(./image/post-03.jpg) no-repeat center;
+         height:290px;
+         margin-top:10px;
+         }
+         .opacity-2{
+         height:100%;
+         width:100%;
+         background:#000000a8;
+         display: flex;
+         align-items: anchor-center;
+         }
+         .banner-2-3{
+         width:100%;
+         padding: 111px 10px 0px 10px;
+      
+         }
+         .banner-2-3 button{
+         background: #9b8e8e4d;
+         border: none;
+         color: #fff;
+         font-size: 18px;
+         padding: 5px;
+         font-weight: lighter;
+         }
+         .banner-2-3 p{
+         max-width: 500px;
+         font-size: 18px;
+         color: #fff;
+         font-weight: 300;
+         margin: 34px 0px;
+         line-height:1px;
+		 cursor:pointer;
+         }
+         .calender-2{
+         width:50%;
+         display:flex;
+         align-items:center;
+         gap:10px;
+         }
+         .calender-2 img{
+         width:20px;
+         height:20px;
+         }
+         .calender-2 span{
+         font-size: 14px;
+         color: #fff;
+         font-weight: lighter;
+         }
+         .finance{
+         width:100%;
+         background:#f6f6f6;
+         }
+         .main-finance{
+         width:100%;
+         display:flex;
+         align-items: center;
+		 padding:30px 0px;
+         }
+         .finance-text{
+         width:14%;
+         }
+         .finance-text h2{
+         font-size: 32px;
+         color: #000;
+         font-weight: 500;
+         }
+         .border-radius{
+         width:75%;
+         border:0.5px solid #000;
+         }
+         .view{
+         width:14%;
+         }
+         .view h2{
+         color:#2B59FF;
+         font-size: 25px;
+         font-weight: 500;
+         text-align: center;
+         }
+         .section{
+         width:100%;
+         display: flex;
+         justify-content: center;
+         gap: 20px;
+         }
+         .section-1{
+         width:33.3%;
+         background:#fff;
+         }
+         .section-1 img{
+         width:100%;
+         height:240px;
+         }
+         .bitcoin{
+         width:100%;
+         margin:30px 0px;
+         }
+         .bitcoin button{
+         background: #2B59FF;
+         border: none;
+         font-size: 18px;
+         color: #fff;
+         width: 100px;
+         border-radius: 4px;
+         margin: 17px 0px 0px 19px;
+         }
+         .bitcoin h2{
+         font-size: 18px;
+         color: #000;
+         font-weight: 500;
+         max-width: 300px;
+         line-height: 25px;
+         margin: 17px 18px;
+		 cursor:pointer;
+         }
+         .calender-2-2{
+         width:100%;
+         display: flex;
+         align-items: center;
+		 		 margin-top:30px;
+         }
+         .bitcoin img{
+         width:25px;
+         height:25px;
+		 margin-left:15px;
+         }
+         .bitcoin span{
+         font-size: 14px;
+         color: #000;
+         font-weight: lighter;
+         margin-left:10px;
+		     align-items: center;
+         }
+         .section-2{
+         width:33.3%;
+         background:#fff;
+         height:490px;
+         }
+         .wind{
+         width:100%;
+         }
+         .wind img{
+         width:100%;
+         height:240px;
+         }
+         .green{
+         width:100%;
+         margin:30px 0px;
+         }
+         .green button{
+         background: #2B59FF;
+         border: none;
+         font-size: 18px;
+         color: #fff;
+         width: 100px;
+         border-radius: 4px;
+         margin: 17px 0px 0px 19px;
+         }
+         .green h2{
+         font-size: 18px;
+         color: #000;
+         font-weight: 500;
+         max-width: 300px;
+         line-height: 25px;
+         margin: 17px 18px;
+		 cursor:pointer;
+         }
+         .date-2{
+         width:100%;
+         display: flex;
+         align-items: center;
+         }
+         .date-2 img{
+         width:25px;
+         height:25px;
+		 margin-left: 15px;
+         }
+         .date-2 span{
+         font-size: 14px;
+         color: #000;
+         font-weight: lighter;
+         margin-left:10px;
+		     align-items: center;
+         }
+         .section-3{
+         width:33.3%;
+         background:#fff;
+		 padding: 0px 0px 15px 0px;
+         
+         }
+         .Crypto{
+         width:100%;
+         }
+         .Crypto img{
+         width:100%;
+         height:240px;
+         }
+         .investors{
+         width:100%;
+         margin: 30px 0px;
+         }
+         .investors button{
+         background: #2B59FF;
+         border: none;
+         font-size: 18px;
+         color: #fff;
+         width: 100px;
+         border-radius: 4px;
+         margin: 17px 0px 0px 19px;
+         }
+         .investors h2{
+         font-size: 18px;
+         color: #000;
+         font-weight: 500;
+         max-width: 300px;
+         line-height: 25px;
+         margin: 17px 18px;
+		 cursor:pointer;
+         }
+         .date-3-4{
+         width:100%;
+         display: flex;
+         align-items: center;
+         }
+         .date-3-4 img{
+         width:25px;
+         height:25px;
+		  margin-left:19px;
+         }
+         .date-3-4 span{
+         font-size: 14px;
+         color: #000;
+         font-weight: lighter;
+         margin-left:10px;
+		     align-items: center;
+         }
+         .Trending{
+         width:100%;
+         background:#f6f6f6;
+         padding:10px;
+         }
+         .main-trending{
+         width:100%;
+         margin: 43px 0px;
+         display:flex;
+         gap: 10px;
+         align-items:center;
+         }
+         .trending-1{
+         width:22%;
+         }
+         .trending-1 h1{
+         font-size: 32px;
+         color: #000;
+         font-weight: 500;
+         }
+         .trending-2{
+         width:78%;
+         }
+         .border-radius-2{
+         width:100%;
+         border:0.5px solid #000;
+         }
+         .startup{
+         width:100%;
+         background:#f6f6f6;
+         }
+         .main-startup{
+         width:100%;
+         display:flex;
+         gap:20px;
+         }
+         .topics{
+         width:25%;
+         background:url(./image/startup.jpg) no-repeat center;
+         height: 250px;
+         background-size: cover;
+         }
+         .opacity-5{
+         width:100%;
+         background:#00000094;
+         height:250px;
+         display: flex;
+         align-items: end;
+         }
+         .topic-3{
+         width: 100%;
+         height: 49px;
+         margin-bottom:20px;
+         }
+         .topic-3 h2{
+         font-size:30px;
+         font-weight: 500;
+         color:#fff;
+         text-align:center;
+         }
+         .technology{
+         width:25%;
+         background-image:url("./image/technology.jpg");
+         background-size: cover;
+         }
+         .Finance{
+         width:25%;
+         background-image:url("./image/finance.jpg");
+         height: 250px;
+         background-size: cover;
+         }
+         .leadership{
+         width:25%;
+         background-image:url("./image/leadership.jpg");
+         height: 250px;
+         background-size: cover;
+         }
+		 .latest{
+		 width:100%;
+         background:#f6f6f6;
+		 padding:30px 0px;
+		 }
+		 .latest-startup{
+		 width:100%;
+		 background:#f6f6f6;
+		  display: flex;
+         justify-content: space-between;
+		 margin:30px 0px 0px 0px;
+		 align-items:center;
+		 }
+		 .latest-startup h2{
+		 font-size: 30px;
+         color: #000;
+         font-family: sans-serif;
+		 font-weight: 500;
+		 }
+		 .border-5{
+		 width:80%;
+		 border-bottom:1px solid #000;
+		 }
+		 .growth{
+		 width:100%;
+		 background:#f6f6f6;
+		 }
+		 .main-growth{
+		 width:100%;
+		 background:#f6f6f6;
+	    display:flex;
+		gap:10px;
+		padding:20px 0px;
+		  
+		 }
+		 .startup-growth{
+		 width:70%;
+		 }
+		 .crypto img{
+		 width:100%;
+		 
+		 }
+		 .explore{
+		 width:33.3%;
+		 background:#fff;
+		 height:330px;
+		 }
+		 .biotechnology{
+		 width:33.3%;
+		 background:#fff;
+		
+		 }
+		.stay-connected{
+		width:100%;
+		background:#fff;
+		}
+		.stay-connected h2{
+		font-size:20px;
+		color:#000;
+		font-family:"Oxygen", sans-serif;
+		border-bottom: 1px solid #000;
+        line-height: 50px;
+		margin:20px;
+		}
+		.icon{
+		width:100%;
+		align-items:center;
+		display:flex;
+		gap:10px;
+		margin-top:35px;
+		}
+		.social-media{
+		width:50%;
+		display:flex;
+		align-items:center;
+		    justify-content: center;
+          gap: 15px;
+		}
+		.social-media img{
+		    width: 40px;
+            height: 40px;
+		}
+		.social-media span{
+		color:#000;
+		font-size:18px;
+		font-family:"Oxygen", sans-serif;
+		cursor:pointer;
+		}
+		.social-icon-2{
+		width:50%;
+		display:flex;
+		align-items:center;
+		    justify-content: center;
+          gap: 10px;
+		}
+		.social-icon-2 img{
+		width: 35px;
+            height: 35px;
+		}
+		.social-icon-2{
+		color:#000;
+		font-size:18px;
+		font-family:"Oxygen", sans-serif;
+		cursor:pointer;
+		}
+		.social-icon-2{
+		color:#000;
+		font-size:18px;
+		font-family:"Oxygen", sans-serif;
+		}
+		.star{
+		width:100%;
+		background:#f6f6f6;
+		padding: 30px 0px;
+		}
+		.starup{
+		width:66.3%;
+		display:flex;
+		gap:10px;
+		
+		}
+		.starup-2{
+		width:54%;
+		background:#fff;
+		padding: 0px 0px 20px 0px;
+		}
+		.dream-destination{
+		width:100%;
+		margin-top:30px;
+		}
+		.dream-destination img{
+		width:100%;
+		}
+		.top-storeis{
+		width:100%;
+		background:#f6f6f6;
+		
+		}
+		.main-stories{
+		width:100%;
+		display:flex;
+		align-items:center;
+		
+		}
+		.stories{
+		width:20%;
+		background:#f6f6f6;
+		}
+		.stories-border{
+		width:100%;
+		background:#f6f6f6;
+		border-bottom:1px solid #000;
+		}
+		.stories h2{
+		    font-size: 25px;
+            font-weight: 500;
+            font-family: sans-serif;
+            color: #000;
+			cursor:pointer;
+		}
+		.economy{
+		width:100%;
+		background:#f6f6f6;
+		 padding: 30px 0px;
+		}
+		.traditional{
+		width:100%;
+		background:#f6f6f6;
+		display:flex;
+		gap:20px;
+		}
+		.employment{
+		width:45%;
+		background:#f6f6f6;
+		}
+		.Gig-employment{
+		width:100%;
+		background-image:url(./image/post-12.jpg);
+		background-size:cover;
+		height:450px;
+		margin-top: 30px;
+		}
+		.employment-opacity{
+		width:100%;
+		height:100%;
+		background:#00000066;
+		position:relative;
+		}
+		
+		.employment-text{
+		width:100%;
+		position:absolute;
+		bottom:20px;
+		}
+		.employment-text button{
+		    background: #2B59FF;
+            border: none;
+            font-size: 18px;
+            color: #fff;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 17px 0px 0px 20px;
+			cursor:pointer;
+			width: 120px;
+		    }
+			.employment-text h2{
+			font-size: 20px;
+            max-width: 381px;
+            font-weight: 600;
+            margin: 20px;
+            line-height: 28px;
+            font-family: sans-serif;
+            cursor: pointer;
+			color:#fff;
+			}
+			.contact-2{
+			width:100%;
+		   display:flex;
+		   align-items:center;
+		   margin-left:12px;
+			}
+			.contact-2 img{
+			width:30px;
+			height:30px;
+			}
+			.contact-2 span{
+			font-size:14px;
+			font-weight:600;
+			color:#fff;
+			}
+			.calender-8{
+			width: 30%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: end;
+			}
+			.calender-8 img{
+			width:20px;
+			height:20px;
+			}
+			.calendar-8 span{
+			font-size:14px;
+			font-weight:600;
+			color:#fff;
+			}
+			.digital-age{
+		    width: 55%;
+			display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 30px;
+		    }
+			.evoulation{
+			background:#fff;
+			width:100%;
+			
+			display: flex;
+            gap: 10px;
+			}
+
+			.evoulation-img{
+			width:50%;
+			height:210px;
+			}
+			.evoulation-img img{
+			width:100%;
+			height:100%;
+			}
+			.evoulation-text{
+			width:50%;
+			}
+			.evoulation-text button{
+			background: #2B59FF;
+            border: none;
+            font-size: 18px;
+            color: #fff;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 30px 0px 0px 20px;
+			cursor:pointer;
+			width: 120px;
+			}
+			.evoulation-text h2{
+			    max-width: 250px;
+               font-size: 18px;
+               margin: 28px 0px 17px 17px;
+               font-weight: 600;
+               font-style: inherit;
+               font-family: sans-serif;
+			   color:#000;
+			   cursor:pointer;
+			}
+			.shaping{
+			background:#fff;
+			width:100%;
+			height:210px;
+			display:flex;
+			gap:10px;
+			}
+			.startup-border{
+			width:100%;
+			background:#f6f6f6;
+			}
+			.border-9{
+			width:100%;
+			display:flex;
+			align-items:center;
+			}
+			.startups-3{
+			width:10%;
+			}
+			.startups-3 h2{
+			font-size: 25px;
+            font-weight: 500;
+            font-family: sans-serif;
+            color: #000;
+            cursor: pointer;
+			margin-bottom:20px;
+			}
+			.startups-border-3{
+			width:83%;
+			border-bottom:0.5px solid #000;
+			margin-bottom:20px;
+			}
+			.view-3{
+			width:10%;
+			display: flex;
+            justify-content: end;
+			}
+			.view-3 h3{
+			font-size: 25px;
+            font-weight: 300;
+            font-family: sans-serif;
+            cursor: pointer;
+			margin-bottom:20px;
+			color:blue;
+			text-align: center;
+			}
+			.remote{
+			width:100%;
+			background:#f6f6f6;
+			height:398px;
+			}
+			.main-remote{
+			width:100%;
+			display:flex;
+			}
+			.challenge{
+			width:50%;
+			}
+			.challenge-bg{
+			width:100%;
+			background-image:url("./image/post-15.jpg");
+			background-repeat:no-repeat;
+			height:350px;
+			background-size:cover;
+			}
+			.challenge-opacity{
+			width:100%;
+			height:100%;
+			background:#00000087;
+			position:relative;
+			}
+			.challenge-text{
+			width:100%;
+			    position: absolute;
+                bottom: 30px;
+			}
+			.challenge-text button{
+              background: #8887876b;
+              border: none;
+              width: 90px;
+              color: #fff;
+              padding:7px;
+              font-weight: 700;
+              font-size: 14px;
+               margin-left: 30px;
+			}
+			.challenge-text h3{
+			max-width: 382px;
+            margin: 20px 0px 30px 30px;
+			color:#fff;
+			    line-height: 30px;
+              font-size: 18px;
+			  cursor:pointer;
+			}
+			.role{
+			width:50%;
+			}
+			.main-role{
+			width:100%;
+			}
+			.main-role-bg{
+			width:100%;
+			background-image:url("./image/post-16.jpg");
+			background-repeat:no-repeat;
+			height:350px;
+			background-size:cover;
+			}
+			.economics-2{
+			background:#fff;
+			width:100%;
+			height:60px;
+			display:flex;
+			margin-top:30px;
+			}
+			.visa{
+			width:100%;
+			background:#f6f6f6;
+			}
+			.main-visa{
+			width:100%;
+			background:#f6f6f6;
+			display:flex;
+			justify-content:center;
+			gap:20px;
+			}
+			.central{
+			width:25%;
+			background:#fff;
+			height:370px;
+			}
+			.central img{
+			width:100%;
+			height: 160px;
+			}
+			.central-date{
+			width:100%;
+			display: flex;
+            align-items: center;
+            gap: 15px;
+			margin: 20px 0px 0px 15px;
+			}
+			.central-date img{
+			width: 25px;
+            height: 25px;
+			}
+			.central-text{
+			width:100%;
+			}
+			.central-date span{
+			font-size:14px;
+			}
+			.central-text button{
+			border: none;
+            background: blue;
+           color: #fff;
+              width: 103px;
+              padding: 6px;
+          margin: 30px 0px 0px 13px;
+           font-size: 18px;
+		    cursor:pointer;
+			}
+			.central-text h2{
+			    font-size: 18px;
+               font-weight: 800;
+              margin: 30px 0px 10px 13px;
+			  cursor:pointer;
+			}
+			.climate{
+			width:50%;
+			background-image:url("./image/post-18.jpg");
+			height:370px;
+			}
+			.climate-opacity{
+			width:100%;
+			height:100%;
+			background:#00000091;
+			position:relative;
+			}
+			.Predictions{
+			width:25%;
+			height:370px;
+			background:#fff;
+			}
+			.prediction-2{
+			width:100%;
+			}
+			.prediction-2 img{
+			width:100%;
+			}
+			.prediction-text button{
+			border: none;
+            background: blue;
+           color: #fff;
+              width: 103px;
+              padding: 6px;
+          margin: 30px 0px 0px 13px;
+           font-size: 18px;
+		    cursor:pointer;
+			}
+			.prediction-text h2{
+			    font-size: 18px;
+               font-weight: 800;
+              margin: 30px 0px 10px 13px;
+			  cursor:pointer;
+			}
+			.prediction-date{
+			width:100%;
+			display: flex;
+            align-items: center;
+            gap: 15px;
+			margin: 20px 0px 0px 15px;
+			}
+			.prediction-date img{
+			width: 25px;
+            height: 25px;
+			}
+			.prediction-date span{
+			font-size:14px;
+			}
+			.ledership{
+			width:100%;
+			background:#f6f6f6;
+			
+			}
+			.leadership-flex{
+			width:100%;
+			display: flex;
+			align-items:center;
+			}
+			.text-leadership{
+			width:12%;
+			margin-top:50px;
+			}
+			.text-leadership{
+			    font-size: 25px;
+               font-weight: 600;
+              font-family: sans-serif;
+               color: #000;
+              cursor: pointer;
+              margin-bottom: 20px;
+			}
+			.text-leadership h2{
+			    font-size: 25px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #000;
+    cursor: pointer;
+    margin-bottom: 32px;
+			}
+			.leadreship-border{
+			width:80%;
+            border-bottom:0.5px solid #000;
+			}
+			.leadership-veiw{
+			width:10%;
+			}
+			.leadership-veiw h2{
+			font-size: 25px;
+    font-weight: 300;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: blue;
+    text-align: center;
+			}
+			.incluison{
+			width:100%;
+			background:#f6f6f6;
+			padding:10px;
+			}
+			.main-inclusion{
+			width:100%;
+			background:#f6f6f6;
+			display:flex;
+			gap:20px;
+			}
+			.diversity{
+			width:25%;
+			height:400px;
+			background:#fff;
+			margin-top:20px;
+			}
+			.diversity-image{
+			width:100%;
+			height:170px;
+			}
+			.diversity-image img{
+			width:100%;
+			height:100%;
+			}
+			.diversity button{
+			border: none;
+            background: blue;
+           color: #fff;
+              width: 103px;
+              padding: 6px;
+          margin: 30px 0px 0px 13px;
+           font-size: 18px;
+		    cursor:pointer;
+			}
+			.diversity p{
+			font-size: 14px;
+               font-weight: 600;
+              margin: 20px 0px 10px 13px;
+			  cursor:pointer;
+			}
+			.diversity-date{
+			width:100%;
+			margin-top:20px;
+			display:flex;
+			align-items:center;
+			gap:15px;
+			}
+			.diversity-date img{
+			width: 25px;
+            height: 25px;
+			margin-left:14px;
+			}
+			.diversity-date span{
+			font-size:14px;
+			font-weight: 500;
+            font-family: math;
+            color: #000;
+            cursor: pointer;
+			}
+			.emotional{
+			width:25%;
+			height:380px;
+			background:#fff;
+			margin-top:20px;
+			}
+			.emotional-image{
+			width:100%;
+			height:170px;
+			}
+			.emotional-image img{
+			width:100%;
+			height:100%;
+			}
+			.emotional button{
+			border: none;
+            background: blue;
+           color: #fff;
+              width: 103px;
+              padding: 6px;
+          margin: 30px 0px 0px 13px;
+           font-size: 18px;
+		    cursor:pointer;
+			}
+			.emotional p{
+			font-size: 14px;
+               font-weight: 600;
+              margin: 20px 0px 10px 13px;
+			  cursor:pointer;
+			}
+			.skills{
+			width:25%;
+			height:380px;
+			background:#fff;
+			margin-top:20px;
+			}
+			.skill-image{
+			width:100%;
+			height:170px;
+			}
+			.skill-image img{
+			width:100%;
+			height:100%;
+			}
+			.skills button{
+			border: none;
+            background: blue;
+           color: #fff;
+              width: 103px;
+              padding: 6px;
+          margin: 30px 0px 0px 13px;
+           font-size: 18px;
+		    cursor:pointer;
+			}
+			.skills p{
+			font-size: 14px;
+               font-weight: 600;
+              margin: 20px 0px 10px 13px;
+			  cursor:pointer;
+			  }
+			.change{
+			width:25%;
+			height:380px;
+			background:#fff;
+			margin-top:20px;
+			}
+			.change-image{
+		     width:100%;
+			height:170px;
+			}
+			.change-image img{
+			width:100%;
+			height:100%;
+			}
+			.change button{
+			border: none;
+            background: blue;
+           color: #fff;
+              width: 103px;
+              padding: 6px;
+          margin: 30px 0px 0px 13px;
+           font-size: 18px;
+		    cursor:pointer;
+			}
+			.change p{
+			font-size: 14px;
+               font-weight: 600;
+              margin: 20px 0px 10px 13px;
+			  cursor:pointer;
+			}
+			.news{
+			width:100%;
+			padding:40px 0px;
+			background:#f6f6f6;
+			}
+			.newsletter{
+			width:100%;
+			background:#f6f6f6;
+			position:relative;
+			height:500px;
+			}
+			.news-text{
+			background:#2b59ff;
+			width:100%;
+			height:330px;
+			position:absolute;
+			bottom:0px;
+			}
+			.news-image{
+             width: 33%;
+             height: 450px;
+             margin-left: 40px;
+             position: absolute;
+             top: 113px;
+			}
+			.news-image img{
+			width:100%;
+			height:100%;
+			}
+			.news-text-2{
+            width: 60%;
+            position: absolute;
+           right: 0;
+           bottom: 100px;
+		   display:flex;
+			}
+			.our{
+			width:50%;
+			}
+			.our h2{
+			font-size: 30px;
+            color: #fff;
+            max-width: 259px;
+            font-weight: 900;
+            font-family: inherit;
+			}
+			.our p{
+			color: #fff;
+            margin-top: 20px;
+            font-size: 16px;
+            max-width: 350px;
+			}
+			.email{
+						width:50%;
+			margin-left:30px;
+			}
+			.email input{
+			    border: none;
+              border-bottom: 1px solid #fff;
+              padding: 11px 0px;
+              background: transparent;
+              font-size: 16px;
+			  width:90%;
+			  color:#fff;
+			}
+			::placeholder{
+			color:#fff;
+			}
+			.email input:focus{
+			outline:none;
+			}
+			.email button{
+			width: 90%;
+            margin-top: 30px;
+           background: #000;
+           color: #fff;
+           font-size: 16px;
+           height: 40px;
+           border: none;
+           text-align: center;
+           border-radius: 5px;
+			}
+			.email button:hover{
+			background:#fff;
+			color:#000;
+			cursor:pointer;
+			
+			}
+			.technology-border{
+			width:100%;
+			background:#f6f6f6;
+			height:100px;
+			}
+			.artificial{
+			width:100%;
+			background:#f6f6f6;
+			padding:40px 0px;
+			}
+			.main-artificial{
+			width:100%;
+			background:#f6f6f6;
+			display:flex;
+			gap:20px;
+			}
+			.AI{
+			width:50%;
+			height:600px;
+			background:#fff;
+			}
+			.AI-image{
+			width:100%;
+			height:60%;
+			}
+			.AI-image img{
+			width:100%;
+			height:100%;
+			}
+			.AI button{
+			background: blue;
+            color: #fff;
+             border: none;
+             width: 100px;
+             font-size: 14px;
+             padding: 5px;
+             margin: 38px 0px 0px 20px;
+			 font-weight:600;
+			 cursor:pointer;
+			}
+			.AI h4{
+			    font-size: 18px;
+    font-weight: 600;
+    max-width: 436px;
+    margin: 20px 0px 0px 20px;
+    font-family: 'Oxygen';
+    line-height: 30px;
+			}
+			.AI p{
+			    font-size: 14px;
+    max-width: 518px;
+    margin: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+			}
+			.Data{
+			width:50%;
+			height:600px;
+			background:#fff;
+			}
+			.data-image{
+			width:100%;
+			height:60%;
+			}
+			.data-image img{
+			width:100%;
+			height:100%;
+			}
+			.Data button{
+			background: blue;
+            color: #fff;
+             border: none;
+             width: 100px;
+             font-size: 14px;
+             padding: 5px;
+             margin: 38px 0px 0px 20px;
+			 font-weight:600;
+			 cursor:pointer;
+			}
+			.Data h4{
+			font-size: 18px;
+    font-weight: 600;
+    max-width: 436px;
+    margin: 20px 0px 0px 20px;
+    font-family: 'Oxygen';
+    line-height: 30px;
+			}
+			.Data p{
+			font-size: 14px;
+    max-width: 518px;
+    margin: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+			}
+			.footer{
+			width:100%;
+			 background:#141857;
+			 padding:10px 0px;
+			}
+			.main-footer{
+			width:100%;
+			}
+			.logo{
+			width:100%;
+			margin:30px 0px;
+			display:flex;
+			gap:20px;
+			align-items:center;
+			
+			}
+			.logo-icon{
+			width:50%;
+			}
+			.logo-icon img{
+			height: 46px;
+            width: 40%;
+			}
+			.logo-social{
+			width:50%;
+			}
+			.logo-social ul{
+			display:flex;
+			gap:30px;
+			justify-content:end;
+			}
+			.logo-social li{
+			font-size: 24px;
+    color: #fff;
+    list-style: none;
+    text-align: end;
+	cursor:pointer;
+			}
+			.bottom-border{
+			width:100%;
+			border-bottom:1px solid #fff;
+			}
+			.bizpulse-footer{
+			width:100%;
+			margin:40px 0px;
+			display:flex;
+			justify-content:space-between;
+			}
+			.newslater{
+			width:30%;
+			}
+			.newslater h2{
+			color:#fff;
+			font-size: 22px;
+    font-weight: 400;
+			}
+			.newslater input{
+			    font-size: 18px;
+    background: transparent;
+    border: solid 1px #fff;
+    margin: 30px 0px; 
+	padding:10px;
+    width: 440px;
+	border-radius: 5px;
+	height:60px;
+	    color: #fff;
+			}
+			.newslater button{
+			background: #2b59ff;
+            width: 440px;
+            padding: 10px;
+           font-size: 20px;
+           border-radius: 5px;
+          border: none;
+		  color:#fff;
+			}
+			.list{
+			width:60%;
+			display:flex;
+			gap:20px;
+			justify-content:end;
+			}
+			.list-1{
+			width:25.9%;
+			}
+			.list-1 h2{
+			color:#fff;
+			font-size:20px;
+			}
+			.list-1 ul{
+			color: #fff;
+            list-style: none;
+            margin-top: 30px;
+            line-height: 3;
+			font-size: 18px;
+            font-weight: 400;
+			}
+			.list-2{
+			width:25.9%;
+			}
+			.list-2 h2{
+			color:#fff;
+			font-size:20px;
+			}
+			.list-2 ul{
+			color: #fff;
+            list-style: none;
+            margin-top: 30px;
+            line-height: 3;
+			font-size: 18px;
+            font-weight: 400;
+			}
+			
+			.list-3{
+			width:33.9%;
+			}
+			.list-3 h2{
+			color:#fff;
+			font-size:20px;
+			}
+			.list-3 ul{
+			color: #fff;
+            list-style: none;
+            margin-top: 30px;
+            line-height: 2;
+			font-size: 18px;
+            font-weight: 400;
+			}
+			.customize{
+			width: 100%;
+            display: flex;
+            justify-content: end;
+           
+			}
+			.customize-1{
+			width:10%;
+			position:relative;
+			
+			}
+			.customize-1 button{
+			background:#2563eb;
+			color:#fff;
+			width: 126px;
+            height: 50px;
+			border:none;
+			font-size:18px;
+			position:fixed;
+			top:50%;
+			right:0;
+			transition: transform .6s ease-in-out;
+			
+			}
+			.customize-1 button:hover{
+			background:#004aec;
+			cursor:pointer;
+			  
+			}
+			.customize-2{
+			width:10%;
+			position:relative;
+			}
+			.customize-2 button{
+			background:#fff;
+			color:#000;
+			width: 126px;
+            height: 50px;
+			border:none;
+			font-size:18px;
+			position:fixed;
+			top:60%;
+			right:0;
+			transition: transform .6s ease-in-out;
+			}
+			.customize-2 button:hover{
+			color:#2563eb;
+			cursor:pointer;
+			}
+			.footer-border-2{
+			width:100%;
+			border-bottom:1px solid #fff;
+			}
+			.copyright{
+			width:100%;
+			    display: flex;
+    justify-content: end;
+    gap: 40px;
+	margin:30px 0px;
+			}
+			.magzine{
+			width:97%;
+			}
+			.magzine h2{
+			color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    font-family: inherit;
+			}
+			.arrow{
+			width:3%;
+			position:relative;
+			}
+			.arrow button{
+			background:#2563eb;
+			color:#fff;
+			border:none;
+			padding:5px;
+			font-size:15px;
+			position:fixed;
+			right:0;
+			bottom:0;
+			cursor:pointer;
+			}
+      </style>
+   </head>
+   <body>
+      <div class="header">
+         <div class="container">
+            <div class="main-header">
+               <div class="social-icon">
+                  <ul>
+				  <li><i class="fa-brands fa-instagram"></i></li>
+				  <li><i class="fa-brands fa-facebook-f"></i></li>
+				  <li><i class="fa-brands fa-x-twitter"></i></li>
+				  <li><i class="fa-brands fa-linkedin-in"></i></li>
+                     
+                  </ul>
+               </div>
+               <div class="bizpulse">
+                  <img src="image/biz-pulse.png" alt="img">
+               </div>
+               <div class="subscribe">
+                  <img src="image/search.png" alt="img">
+                  <button>Subscribe</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="border">
+	  <hr style="border-bottom:0.px solid black; width:100%;">
+         <div class="container">
+            <div class="main-border">
+               
+               <ul>
+                  <li style="color:blue;">Home </li>
+                  <li>Finence</li>
+                  <li>Tecknology</li>
+                  <li>Startup</li>
+                  
+                  <li>Technology</li>
+                  <li>Leadership</li>
+                  <li>About</li>
+                  <li>Contact</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="banner">
+         <div class="container">
+		 <div class="exploring-banner">
+               <div class="banner-bg">
+                  <div class="bg">
+                     <div class="banner-text">
+                        <button>TECHNOLOGY</button>
+                        <p>Exploring how artificial inteligence is rashaping carporate straightgy in 2025</p>
+                     </div>
+                     <div class="text-icon">
+                        <div class="contact">
+                           <img src="image/contact.png" alt="img">
+                           <span>Kalpesb</span>
+                        </div>
+                        <div class="date">
+                           <img src="image/calendar.png" alt="img">
+                           <span> March 18, 2025</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="banner-2">
+                  <div class="banner-2-1">
+                     <div class="opacity">
+                        <div class="economics">
+						
+                           <button>ECONOMICS</button>
+                           <p>Global Economic Outlook: Predictions for 2025</p>
+                           <div class="calender">
+                              <img src="image/calendar.png" alt="img">
+                              <div class="calender-3">
+                                 <span> March 18, 2025</span>
+                              </div>
+                           </div>
+						   
+                        </div>
+                     </div>
+					 </div>
+                     <div class="banner-2-2">
+                        <div class="banner-2-2-2">
+                           <div class="opacity-2">
+                              <div class="banner-2-3">
+                                 <button>TECHNOLOGY</button>
+                                 <p>Global Economic Outlook: Predictions for 2025</p>
+                                 <div class="calender-2">
+                                    <img src="image/calendar.png" alt="img">
+                                    <span> March 18, 2025</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+              
+            </div>
+         </div>
+      </div>
+	   </div>
+      <div class="finance">
+         <div class="container">
+            <div class="main-finance">
+               <div class="finance-text">
+                  <h2>Finance</h2>
+               </div>
+               <div class="border-radius"></div>
+               <div class="view">
+                  <h2>View all</h2>
+               </div>
+            </div>
+            <div class="section">
+               <div class="section-1">
+                  <div class="section-image">
+                     <img src="image/post-05.jpg" alt="img">
+                  </div>
+                  <div class="bitcoin">
+                     <button>FINANCE</button>
+                     <h2>Strategies for Navigating Inflation in a Volatile Market</h2>
+                     <div class="calender-2-2">
+                        <img src="image/calendar-2.png" alt="img">
+                        <span> March 18, 2025</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="section-2">
+                  <div class="wind">
+                     <img src="image/post-06.jpg" alt="img">
+                  </div>
+                  <div class="green">
+                     <button>FINANCE</button>
+                     <h2>Green Finance: Investing in a Sustainable Future</h2>
+                  </div>
+                  <div class="date-2">
+                     <img src="image/calendar-2.png" alt="img">
+                     <span> March 18, 2025</span>
+                  </div>
+               </div>
+               <div class="section-3">
+                  <div class="Crypto">
+                     <img src="image/post-04.jpg" alt="img">
+                  </div>
+                  <div class="investors">
+                     <button>FINANCE</button>
+                     <h2>Green Finance: Investing in a Sustainable Future</h2>
+                  </div>
+                  <div class="date-3-4">
+                     <img src="image/calendar-2.png" alt="img">
+                     <span> March 18, 2025</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="Trending">
+         <div class="container">
+            <div class="main-trending">
+               <div class="trending-1">
+                  <h1>Trending Topics</h1>
+               </div>
+               <div class="trending-2">
+                  <div class="border-radius-2"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="startup">
+         <div class="container">
+            <div class="main-startup">
+               <div class="topics">
+                  <div class="opacity-5">
+                     <div class="topic-3">
+                        <h2>Startup</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="technology">
+                  <div class="opacity-5">
+                     <div class="topic-3">
+                        <h2>Technology</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="Finance">
+                  <div class="opacity-5">
+                     <div class="topic-3">
+                        <h2>Finance</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="leadership">
+                  <div class="opacity-5">
+                     <div class="topic-3">
+                        <h2>leadership</h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  <div class="latest">
+	   <div class="container">
+	    <div class="latest-startup">
+		 <h2>Latest  in startup</h2>
+	       <div class="border-5"></div>
+		    </div>
+	   </div> 
+	 </div>
+	 <div class="growth">
+	 <div class="container">
+	 <div class="main-growth">
+	 <div class="section-3">
+                  <div class="crypto">
+                     <img src="image/post-07.jpg" alt="img">
+                  </div>
+                  <div class="investors">
+                     <button>FINANCE</button>
+                     <h2>Green Finance: Investing in a Sustainable Future</h2>
+                  </div>
+                  <div class="date-3-4">
+                     <img src="image/calendar-2.png" alt="img">
+                     <span> March 18, 2025</span>
+                  </div>
+               </div>
+			   
+			  
+			   <div class="biotechnology">
+			   <div class="crypto">
+                     <img src="image/post-08.jpg" alt="img">
+                  </div>
+                  <div class="investors">
+                     <button>FINANCE</button>
+                     <h2>Green Finance: Investing in a Sustainable Future</h2>
+                  </div>
+                  <div class="date-3-4">
+                     <img src="image/calendar-2.png" alt="img">
+                     <span> March 18, 2025</span>
+                  </div>
+               </div>
+			    <div class="explore">
+	            <div class="stay-connected">
+	           <h2>Stay connected</h2>
+	         </div>
+			 <div class="icon">
+			 <div class="social-media">
+			 <img src="image/facebook-2.png" alt="img">
+			 <span>Facebook</span>
+			 
+			 </div>
+			 <div class="social-icon-2">
+			 <img src="image/twitter.png" alt="img">
+			 <span>Twitter</span>
+			 </div>
+			 </div>
+			 <div class="icon">
+			 <div class="social-media">
+			 <img src="image/pintrest.png" alt="img">
+			 <span>pintrest</span>
+			 
+			 </div>
+			 <div class="social-icon-2">
+			 <img src="image/youtube.png" alt="img">
+			 <span>youtube</span>
+			 </div>
+			 </div>
+			 <div class="dream-destination">
+			 <img src="image/post-11.jpg" alt="img">
+			 </div>
+	    </div>
+		
+			 </div> 
+		</div>
+	</div>
+	 <div class="star">
+	   <div class="container">
+	     <div class="starup">
+	        <div class="starup-2">
+                  <div class="crypto">
+                     <img src="image/post-09.jpg" alt="img">
+                  </div>
+                  <div class="investors">
+                     <button>FINANCE</button>
+                     <h2>Green Finance: Investing in a Sustainable Future</h2>
+                  </div>
+                  <div class="date-3-4">
+                     <img src="image/calendar-2.png" alt="img">
+                     <span> March 18, 2025</span>
+                  </div>
+               </div>
+			   <div class="starup-2">
+                  <div class="crypto">
+                     <img src="image/post-10.jpg" alt="img">
+                  </div>
+                  <div class="investors">
+                     <button>FINANCE</button>
+                     <h2>Green Finance: Investing in a Sustainable Future</h2>
+                  </div>
+                  <div class="date-3-4">
+                     <img src="image/calendar-2.png" alt="img">
+                     <span> March 18, 2025</span>
+                  </div>
+               </div>
+	 </div>
+	 </div>
+	 </div>
+	 
+	 <div class="top-storeis">
+	 <div class="container">
+	 <div class="main-stories">
+	    <div class="stories">
+		<h2>Top Stories</h2>
+		</div>
+		<div class="stories-border">
+		</div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="economy">
+	    <div class="container">
+	      <div class="traditional">
+	        <div class="employment">
+	           <div class="Gig-employment">
+	             <div class="employment-opacity">
+	              <div class="employment-text">
+	             <button>economics</button>
+	            <h2>Understanding the Gig Economy: Implications for Traditional Employment</h2>
+	         <div class="contact-2">
+	       <img src="image/contact.png" alt="img">
+          <span>Kalpesb</span>
+		  <div class="calender-8">
+		    <img src="image/calendar.png" alt="img">
+                    <span> March 18, 2025</span>
+		  </div>
+	  </div>
+	</div>
+    </div>
+ </div>
+</div>
+	 <div class="digital-age">
+	 <div class="evoulation">
+	 <div class="evoulation-img">
+	 <img src="image/post-13.jpg" alt="img">
+	 </div>
+	 <div class="evoulation-text">
+	 <button>Leadership</button>
+	  <h2>The Evolution of Leadership Styles in the Digital Age</h2>
+	  <div class="date-3-4">
+                     <img src="image/calendar-2.png" alt="img">
+                     <span> March 18, 2025</span>
+                  </div>
+	 </div>
+	 </div>
+	 <div class="shaping">
+	 <div class="evoulation-img">
+	 <img src="image/post-14.jpg" alt="img">
+	 </div>
+	 <div class="evoulation-text">
+	 <button>Technology</button>
+	  <h2>The Evolution of Leadership Styles in the Digital Age</h2>
+	  <div class="date-3-4">
+                     <img src="image/calendar-2.png" alt="img">
+                     <span> March 18, 2025</span>
+                  </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="startup-border">
+	 <div class="container">
+	 <div class="border-9">
+	 <div class="startups-3">
+	 <h2>Startups</h2>
+	 </div>
+	 <div class="startups-border-3">
+	 </div>
+	 <div class="view-3">
+	 <h3>Veiw All<h3>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="remote">
+	 <div class="container">
+	 <div class="main-remote">
+	 <div class="challenge">
+	 <div class="challenge-bg">
+	 <div class="challenge-opacity">
+	 <div class="challenge-text">
+	 <button>STARTUP</button>
+	 <h3>Building a Remote Startup: Challenges and Opportunities</h3>
+	  <div class="contact-2">
+	       <img src="image/contact.png" alt="img">
+          <span>Kalpesb</span>
+		  <div class="calender-8">
+		    <img src="image/calendar.png" alt="img">
+                    <span> March 18, 2025</span>
+		  </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 
+	 </div>
+	 <div class="role">
+	 <div class="main-role">
+	 <div class="main-role-bg">
+	 <div class="challenge-opacity">
+	 <div class="challenge-text">
+	 <button>STARTUP</button>
+	 <h3>Building a Remote Startup: Challenges and Opportunities</h3>
+	  <div class="contact-2">
+	       <img src="image/contact.png" alt="img">
+          <span>Kalpesb</span>
+		  <div class="calender-8">
+		    <img src="image/calendar.png" alt="img">
+                    <span> March 18, 2025</span>
+		  </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="economics-2">
+     <div class="startup-border">
+	 <div class="container">
+	 <div class="border-9">
+	 <div class="startups-3">
+	 <h2>ECONOMICS</h2>
+	 </div>
+	 <div class="startups-border-3">
+	 </div>
+	 <div class="view-3">
+	 <h3>Veiw All<h3>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="visa">
+	 <div class="container">
+	 <div class="main-visa">
+	 <div class="central">
+	 <img src="image/post-17.jpg" alt="img">
+	 <div class="central-text">
+                     <button>FINANCE</button>
+                     <h2>Green Finance: Investing in a Sustainable Future</h2>
+                  </div>
+                  <div class="central-date">
+                     <img src="image/calendar-2.png" alt="img">
+                     <span> March 18, 2025</span>
+                  </div>
+	 </div>
+	 <div class="climate">
+	 <div class="climate-opacity">
+	 <div class="climate-text">
+	 <div class="challenge-text">
+	 <button>STARTUP</button>
+	 <h3>The Economic Impact of Climate Change on Emerging Markets</h3>
+	  <div class="contact-2">
+	       <img src="image/contact.png" alt="img">
+          <span>Kalpesb</span>
+		  <div class="calender-8">
+		    <img src="image/calendar.png" alt="img">
+                    <span> March 18, 2025</span>
+		  </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="Predictions">
+	 <div class="prediction-2">
+      <img src="image/post-20.jpg" alt="img">
+	 <div class="prediction-text">
+                     <button>FINANCE</button>
+                     <h2>Green Finance: Investing in a Sustainable Future</h2>
+                  </div>
+                  <div class="prediction-date">
+                     <img src="image/calendar-2.png" alt="img">
+                     <span> March 18, 2025</span>
+                  </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="ledership">
+	 <div class="container">
+	 <div class="leadership-flex">
+	 <div class="text-leadership">
+	 <h2>Leadership</h2>
+	 </div>
+	 <div class="leadreship-border"></div>
+	 <div class="leadership-veiw">
+	 <h2>View-all</h2>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="incluison">
+	 <div class="container">
+	 <div class="main-inclusion">
+	 <div class="diversity">
+	 <div class="diversity-image">
+	 <img src="image/post-21.jpg" alt="img">
+	 </div>
+	 <button>Leadership</button>
+	 <p>Diversity and Inclusion: Equitable Work Environments</p>
+	 <div class="diversity-date">
+	 <img src="image/calendar-2.png" alt="img">
+	 <span> March 18, 2025</span>
+	 </div>
+	 </div>
+	 <div class="emotional">
+	 <div class="emotional-image">
+	 <img src="image/post-22.jpg" alt="img">
+	 </div>
+	 <button>Leadership</button>
+	 <p>Diversity and Inclusion: Equitable Work Environments</p>
+	 <div class="diversity-date">
+	 <img src="image/calendar-2.png" alt="img">
+	 <span> March 18, 2025</span>
+	 </div>
+	 </div>
+	 <div class="skills">
+	 <div class="skill-image">
+	 <img src="image/post-23.jpg" alt="img">
+	 </div>
+	 <button>Leadership</button>
+	 <p>Diversity and Inclusion: Equitable Work Environments</p>
+	 <div class="diversity-date">
+	 <img src="image/calendar-2.png" alt="img">
+	 <span> March 18, 2025</span>
+	 </div>
+	 </div>
+	 <div class="change">
+	 <div class="change-image">
+	 <img src="image/post-24.jpg" alt="img">
+	 </div>
+	 <button>Leadership</button>
+	 <p>Diversity and Inclusion: Equitable Work Environments</p>
+	 <div class="diversity-date">
+	 <img src="image/calendar-2.png" alt="img">
+	 <span> March 18, 2025</span>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="news">
+	 <div class="container">
+	 <div class="newsletter">
+	 <div class="news-text"></div>
+	 <div class="news-image">
+	 <img src="image/middle.jpg" alt="img">
+	 </div>
+	 <div class="news-text-2">
+	 <div class="our">
+	 <h2>Subscribe To Our Newsletter</h2>
+	 <p>Get unlimited access to Executive Insight and stay ahead of the curve.</p>
+	 </div>
+	 <div class="email">
+	<input type="email" placeholder="email@example.com">
+	 <button>Subscribe</button>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="technology-border">
+	 <div class="container">
+<div class="leadership-flex">
+	 <div class="text-leadership">
+	 <h2>Technology</h2>
+	 </div>
+	 <div class="leadreship-border"></div>
+	 <div class="leadership-veiw">
+	 <h2>View-all</h2>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="artificial">
+	 <div class="container">
+	 <div class="main-artificial">
+	 <div class="AI">
+	 <div class="AI-image">
+	 <img src="image/post-25.jpg" alt="img">
+	 </div>
+	 <button>TECHNOLOGY</button>
+	 <h4>The Ethical Implications of Artificial Intelligence in Everyday Life</h4>
+	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis orci consectetur, blandit justo ut, tempor turpis. Vestibulum facilisis ...</p>
+	 </div>
+	 <div class="Data">
+	 <div class="data-image">
+	 <img src="image/post-26.jpg" alt="img">
+	 </div>
+	 <button>TECHNOLOGY</button>
+	 <h4>The Ethical Implications of Artificial Intelligence in Everyday Life</h4>
+	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis orci consectetur, blandit justo ut, tempor turpis. Vestibulum facilisis ...</p>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="footer">
+	 <div class="container">
+	 <div class="main-footer">
+	<div class="logo">
+	<div class="logo-icon">
+	<img src="image/footer-logo.svg" alt="img">
+	</div>
+	<div class="logo-social">
+	<ul>
+	<li><i class="fa-brands fa-instagram"></i></li>
+	<li><i class="fa-brands fa-facebook-f"></i></li>
+	<li><i class="fa-brands fa-x-twitter"></i></li>
+	<li><i class="fa-brands fa-square-linkedin"></i></li>
+	</ul>
+	</div>
+	</div>
+	<div class="bottom-border"></div>
+	<div class="bizpulse-footer">
+	<div class="newslater">
+	<h2>Subscribe To Our Newsletter</h2>
+	<input type="text" placeholder="email@example.com"></input>
+	<button>subscribe</button>
+	</div>
+	<div class="list">
+	<div class="list-1">
+	<h2>Company</h2>
+	<ul>
+	<li>Home</li>
+	<li>About</li>
+	<li>Contect</li>
+	</ul>
+	</div>
+	<div class="list-2">
+	<h2>Catogries</h2>
+	<ul>
+	<li>Finance</li>
+	<li>technology</li>
+	<li>Startup</li>
+	<li>Economic</li>
+	<li>leadership</li>
+	</ul>
+	</div>
+	<div class="list-3">
+	<h2>Contact</h2>
+	<ul>
+	<li>455 West Orchard Street Kings Mountain, NC 280867</li>
+	<li><i class="fa-etch fa-solid fa-phone"></i>+088 (246) 642-27-10</li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	 </div>
+	  <div class="customize">
+	  <div class="customize-1">
+	  <button><i class="fa-solid fa-cart-shopping"></i>
+	  
+	  Buy now
+	  </button>
+	  </div>
+	  <div class="customize-2">
+	  <button><i class="fa-solid fa-palette"></i>customize</button>
+	  </div>
+	  </div>
+	  <div class="footer-border-2"></div>
+	  <div class="copyright">
+	  <div class="magzine">
+	  <h2>Copyright © 2025 Business Magazine</h2>
+	  </div>
+	  <div class="arrow">
+	  <button><a href="#"><i class="fa-solid fa-angle-up"></i></a></button>
+	  </div>
+	  
+	  </div>
+	  </div>
+	 </div>
+   </body>
+   <html>
