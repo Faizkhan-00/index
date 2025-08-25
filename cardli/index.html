@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cardly</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap');
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+ font-family: "Oxygen", sans-serif;        
+}
+.header{
+width:100%;
+background:#fff;
+padding:10px;
+}
+.container{
+width:1100px;
+margin:0px auto;
+}
+.main-header{
+width:100%;
+background:#fff;
+display:flex;
+justify-content:space-between;
+align-items: center;
+font-weight: bold
+}
+.logo-header{
+width:20%;
+background:#fff;
+}
+.logo-header h2{
+font-size:30px;
+color:#000;
+text-align:center;
+}
+.logo-header span{
+color:#b6afa9;
+}
+.header-menu{
+width:55%;
+background:#fff;
+}
+.header-menu ul{
+display:flex;
+justify-content:space-between;
+list-style:none;
+}
+
+.banner{
+width:100%;
+height: 700px;
+background: url(./images/background.png) no-repeat center;
+position: relative;
+display: flex;
+align-items: center;
+background-size:cover;
+}
+.banner-1{
+padding:10px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+.banner-1 h2{
+font-size:20px;
+color:#fff;
+}
+.banner-1 h3{
+font-size:3.2em;
+color:#fff;
+margin:15px;
+}
+.banner-1 p{
+font-size:16px;
+color:#fff;
+max-width:670px;
+margin:10px;
+text-align:center;
+}
+.button{
+background:#d57e4a;
+width:30%;
+border-radius:30px;
+margin-top:20px;
+height:60px;
+}
+.button h2{
+font-size:1.7em;
+color:#fff;
+text-align:center;
+margin-top:8px;
+}
+.hero{
+width:100%;
+
+}
+.hero-1{
+width:100%;
+background:#fff;
+padding:10px;
+display:flex;
+justify-content:center;
+}
+.hero-1 h2{
+font-size: 2em;
+color:#000;
+text-align:center;
+margin:30px;
+line-height: 100px;
+}
+.hero-1 hr{
+color:#d57e4a;
+width:50%;
+border:solid 2px;
+text-align:center;
+margin:0px auto;
+}
+.card{
+width:100%;
+}
+.main-card{
+background:#fff;
+width:100%;
+display:flex;
+gap:20px;
+}
+.card-child-1{
+width:70%;
+height:550px;
+background: url(./images/card-1.png) no-repeat center;
+display: flex;
+align-items: center;
+background-size:cover;
+}
+.card-bg{
+padding:10px;
+width:100%;
+display:flex;
+justify-content:center;
+flex-direction:column;
+align-items:center;
+line-height:50px;
+}
+.card-bg h4{
+font-size:20px;
+color:#fff;
+}
+.card-bg h1{
+font-size:40px;
+color:#fff;
+line-height: 80px;
+}
+.card-bg p{
+font-size:14px;
+max-width:500px;
+color:#fff;
+line-height:30px;
+text-align:center;
+margin-top:20px;
+}
+
+.main-child-2{
+width:30%;
+}
+.main-child-3{
+width:100%;
+background: url(./images/card-2.jpg) no-repeat center;
+display:flex;
+align-items: center;
+height:250px;
+justify-content:center;
+flex-direction:column;
+line-height:50px;
+}
+.main-child-3 h4{
+font-size:20px;
+color:#e0dad4;
+}
+.main-child-3 h2{
+font-size:25px;
+color:#fff;
+}
+.main-child-3 h5{
+font-size:20px;
+color:#e0dad4;
+}
+.main-child-4{
+width:100%;
+height:290px;
+margin-top: 10px;
+}
+.main-child-5{
+width:100%;
+background: url(./images/card-3.jpg) no-repeat center;
+display:flex;
+align-items: center;
+height: 100%;
+justify-content:center;
+flex-direction:column;
+background-size:cover;
+}
+.main-child-5 h5{
+font-size:16px;
+color:#3c3834;
+}
+.main-child-5 h2{
+font-size:25px;
+color#000;
+line-height:50px;
+}
+.main-child-5 h3{
+color:#3c3834;
+font-size:20px;
+}
+.row{
+width:100%;
+background:#fff;
+margin-top:20px;
+}
+.main-row{
+background:#fff;
+width:100%;
+display:flex;
+gap:20px;
+}
+.row-child-1{
+width:50%;
+background:#fff;
+height:500px;
+}
+.row-child-2{
+width:50%;
+background:#fff;
+height:500px;
+}
+.row-child-3{
+width:100%;
+background: url(./images/card-4.jpg) no-repeat center;
+display:flex;
+align-items: center;
+height:100%;
+justify-content:center;
+flex-direction:column;
+border-radius: 13px;
+}
+.row-child-3 h5{
+color:#e0dad4;
+font-size:20px;
+}
+.row-child-3 h2{
+font-size:35px;
+color:#fff;
+line-height:65px;
+}
+.row-child-3 p{
+color:#e0dad4;
+font-size:16px;
+max-width:400px;
+text-align:center;
+}
+.row-child-4{
+width:100%;
+background: url(./images/card-5.jpg) no-repeat center;
+display:flex;
+align-items: center;
+padding:10px;
+height:500px;
+border-radius:13px;
+}
+.row-child-5{
+width:100%;
+padding:10px;
+display:flex;
+align-items:center;
+flex-direction:column;
+}
+.row-child-5 h3{
+color:#3c3834;
+font-size:20px;
+margin:20px;
+}
+.row-child-5 h1{
+color:#000;
+font-size:25px;
+}
+.row-child-5 p{
+font-size:16px;
+color:#3c3834;
+max-width:400px;
+text-align:center;
+}
+.coloumn{
+margin:100px 0px;
+}
+.main-column{
+width:100%;
+background: url(./images/card-6.jpg) no-repeat center;
+display:flex;
+align-items: center;
+height:600px;
+background-size:cover;
+}
+.coluoumn-2{
+width:100%;
+}
+.coloumn-2 h4{
+color:#b1a492;
+}
+.coluoumn-2 h2{
+color:#000;
+font-size:2.3em;
+max-width:538px;
+line-height:40px;
+}
+.coluoumn-2 p{
+color:#605d59;
+font-size:16px;
+max-width:400px;
+text-align:center;
+margin-top:30px;
+}
+.button-2{
+width:26%;
+height:73px;
+border-radius:30px;
+background:#e59361;
+display: flex;
+justify-content: center;
+margin-top:70px;
+}
+.button-2 h2{
+font-size:20px;
+color:#fff;
+text-align: center;
+margin-top: 25px;
+}
+.section{
+background:#fff;
+width:100%;
+}
+.main-section{
+background:#fff;
+width:100%;
+display:flex;
+justify-content:center;
+gap:20px;
+}
+.section-1{
+background:#000;
+width:33.3%;
+}
+.section-1-2{
+width:100%;
+height:350px;
+margin-top:50px;
+text-align:center;
+}
+.section-1-2 h4{
+color:#f6eaea;
+font-size:18px;
+text-align:center;
+}
+.section-1-2 h2{
+font-size:2.5em;
+color:#fff;
+text-align:center;
+line-height:84px;
+}
+.section-1-2 p{
+font-size:16px;
+color:#f6eaea;
+margin-top: 40px;
+text-align:center;
+}
+.section-1-2 button{
+border: 2px solid #fff;
+background: #000;
+width: 138px;
+color: #fff;
+border-radius: 40px;
+height: 51px;
+margin-top: 40px;
+font-size: 24px;
+}
+.section-2{
+background:#000;
+width:33.3%;
+}
+.section-2-2{
+width:100%;
+height:350px;
+margin-top:50px;
+text-align:center;
+}
+.section-2-2 h4{
+color:#f6eaea;
+font-size:18px;
+text-align:center;
+}
+.section-2-2 h2{
+font-size:2.5em;
+color:#fff;
+text-align:center;
+line-height:84px;
+}
+.section-2-2 p{
+font-size:16px;
+color:#f6eaea;
+margin-top: 40px;
+text-align:center;
+}
+.section-2-2 button{
+border: 2px solid #fff;
+background: #000;
+width: 138px;
+color: #fff;
+border-radius: 40px;
+height: 51px;
+margin-top: 40px;
+font-size: 24px;
+}
+.section-3{
+background:#e59361;
+width:33.3%;
+}
+.section-3-3{
+width:100%;
+height:350px;
+margin-top:50px;
+text-align:center;
+}
+.section-3-3 h4{
+ color: #fff;
+text-align: center;
+margin-top: 50px
+}
+.section-3-3 h2{
+font-size:2.5em;
+color:#fff;
+text-align:center;
+line-height:84px;
+}
+.section-3-3 p{
+font-size:16px;
+color:#f6eaea;
+margin-top: 40px;
+text-align:center;
+}
+.section-3-3 button{
+border: 2px solid #fff;
+background:#e59361;
+width: 138px;
+color: #fff;
+border-radius: 40px;
+height: 51px;
+margin-top: 40px;
+font-size: 24px;
+}
+.article{
+width:100%;
+background:#f2f2f2;
+margin-top:100px;
+}
+.main-article{
+width:100%;
+background:#f2f2f2;
+display:flex;
+gap:20px;
+padding-bottom: 100px;
+padding-top:100px;
+}
+.article-1{
+width:33.3%;
+}
+.article-1-1{
+width:100%;
+height: 557px;
+background:#fff;
+}
+.article-1-1 img{
+width:100%;
+}
+.article-1-1 h1{
+font-size: 30px;
+color: #000;
+text-align: center;
+margin:30px;
+}
+.article-1-1 p{
+max-width: 343px;
+font-size: 14px;
+text-align: center;
+}
+.article-1-1 h6{
+color: #867a6f;
+font-size: 16px;
+margin: 50px;
+text-align: center;
+}
+.article-1-2{
+width:100%;
+background:#f2f2f2;
+}
+.article-1-2-1 img{
+width:100%;
+margin-top:20px;
+}
+.article-1-2-2{
+width:100%;
+background:#f2f2f2;
+}
+.article-1-2-3{
+margin-top:30px;
+background:#fff;
+width:100%;
+height:759px;
+}
+.article-1-2-3 img{
+width:100%;
+}
+.article-1-2-3 h1{
+font-size: 30px;
+color: #000;
+text-align: center;
+margin:30px;
+}
+.article-1-2-3 p{
+max-width: 343px;
+font-size: 14px;
+text-align: center;
+}
+.article-1-2-3 h6{
+color: #867a6f;
+font-size: 16px;
+margin: 50px;
+text-align: center;
+}
+.article-2{
+width:33.3%;
+background:#f2f2f2;
+}
+.article-2-1{
+margin-bottom: 30px;
+height: 480px;
+}
+.article-2-1{
+width:100%;
+background:#fff;
+}
+.article-2-1 img{
+width:100%;
+}
+.article-2-1 h1{
+font-size: 30px;
+color: #000;
+text-align: center;
+margin:30px;
+}
+.article-2-1 p{
+max-width: 343px;
+font-size: 14px;
+text-align: center;
+}
+.article-2-1 h6{
+color: #867a6f;
+font-size: 16px;
+margin:50px;
+text-align: center;
+}
+.article-2-2{
+width:100%;
+background:#fff;
+height: 740px;
+}
+.article-2-2-1{
+width:100%;
+}
+.article-2-2-1 img{
+width:100%;
+}
+.article-2-2-1 h1{
+font-size: 30px;
+color: #000;
+text-align: center;
+margin:30px;
+}
+.article-2-2-1 p{
+max-width: 343px;
+font-size: 14px;
+text-align: center;
+}
+.article-2-2-1 h6{
+color: #867a6f;
+font-size: 16px;
+margin:50px;
+text-align: center;
+}
+.article-2-3{
+width:100%;
+background:#fff;
+margin-top:26px;
+height:560px;
+}
+.article-2-3-1{
+width:100%;
+background:#fff;
+}
+.article-2-3-1 img{
+width:100%;
+}
+.article-2-3-1 h1{
+font-size: 30px;
+color: #000;
+text-align: center;
+margin:30px;
+}
+.article-2-3-1 p{
+max-width: 343px;
+font-size: 14px;
+text-align: center;
+}
+.article-2-3-1 h6{
+color: #867a6f;
+font-size: 16px;
+margin:30px;
+text-align: center;
+}
+.article-3{
+width:33.3%;
+}
+.article-3-1{
+width:100%;
+background:#fff;
+height:625px;
+}
+.article-3-1 img{
+width:100%;
+}
+.article-3-1 h1{
+font-size: 30px;
+color: #000;
+text-align: center;
+margin:30px;
+}
+.article-3-1 p{
+max-width: 343px;
+font-size: 14px;
+text-align: center;
+}
+.article-3-1 h6{
+color: #867a6f;
+font-size: 16px;
+margin:30px;
+text-align: center;
+}
+.article-3-2{
+width:100%;
+background:#fff;
+height:640px;
+margin-top:30px;
+}
+.article-3-2 img{
+width:100%;
+}
+.article-3-2 h1{
+font-size: 30px;
+color: #000;
+text-align: center;
+margin:30px;
+}
+.article-3-2 p{
+max-width: 343px;
+font-size: 14px;
+text-align: center;
+}
+.article-3-2 h6{
+color: #867a6f;
+font-size: 16px;
+margin:30px;
+text-align: center;
+}
+.artical-4{
+width:100%;
+background:#fff;
+height:450px;
+margin-top:30px;
+}
+.artical-4 img{
+width:100%;
+}
+.artical-4 h1{
+font-size: 30px;
+color: #000;
+text-align: center;
+margin:30px;
+}
+.artical-4 p{
+max-width: 343px;
+font-size: 14px;
+text-align: center;
+}
+.artical-4 h6{
+color: #867a6f;
+font-size: 16px;
+margin:30px;
+text-align: center;
+}
+.instagram-text{
+background:#fff;
+padding:10px;
+width:100%;
+}
+.main-instagram{
+padding:10px;
+width:100%;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+.main-instagram h2{
+line-height: 78px;
+font-size: 2.6em;
+font-weight:700;
+text-align:center;
+}
+.footer-section{
+width:100%;
+padding:10px;
+margin-top:35px;
+}
+.main-footer-section{
+width:100%;
+padding:10px;
+display:flex;
+gap:15px;
+height:370px;
+}
+.main-footer-1{
+width:25%;
+}
+.main-footer-1 img{
+width:100%;
+}
+.main-footer-2{
+width:25%;
+}
+.main-footer-2 img{
+width:100%;
+}
+.main-footer-3{
+width:25%;
+}
+.main-footer-3 img{
+width:100%;
+}
+.main-footer-4{
+width:25%;
+}
+.main-footer-4 img{
+width:100%;
+}
+.footer{
+width:100%;
+padding:10px;
+background:#222;
+
+}
+.main-footer{
+width:100%;
+padding:10px;
+display:flex;
+justify-content: space-between;
+}
+.copyright{
+width:40%;
+padding:10px;
+}
+.copyright p{
+font-size:16px;
+align-items:center;
+color:#ccc;
+}
+.privecy{
+width:40%;
+padding:10px;
+display:flex;
+justify-content:end;
+align-items: center;
+}
+.privecy p{
+font-size:16px;
+color:#777;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="container">
+<div class="main-header">
+<div class="logo-header">
+<h2>Cardly
+<span>.</span>
+</h2>
+</div>
+<div class="header-menu">
+<ul>
+<li>HOME</li>
+<li>ABOUT</li>
+<li>PRICING</li>
+<li>PORTFOLIO</li>
+<li>CONTACT</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="banner">
+<div class="container">
+<div class="banner-1">
+<h2>HERO HEADER</h2>
+<h3>Main Awesome Headline Here</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus feugiat mi, a tincidunt lectus egestas ut. Duis dignissim sapien, lectus eleifend sit amet</p>
+<div class="button">
+<h2>Work with us</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="hero">
+<div class="container">
+<div class="hero-1">
+<h2>Featured Articles <hr> </h2>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="container">
+<div class="main-card">
+<div class="card-child-1">
+<div class="card-bg">
+<h4>Category</h4>
+<h1>Article Title <hr style="color:#d57e4a; width:100px; border:solid 2px; text-align:center;"></h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus feugiat mi, a tincidunt lectus Vestibulum luctus feugiat mi, a tincidunt lectus a tincidunt lectus</p>
+</div>
+</div>
+<div class="main-child-2">
+<div class="main-child-3">
+<h4>Category</h4>
+<h2>Article Title <hr style="color:#d57e4a; width:140px; border:solid 2px;  margin-bottom:30px;"></h2>
+<h5>Read more</h5>
+</div>
+<div class="main-child-4">
+<div class="main-child-5">
+<h5>CATOGERY</h5>
+<h2>Article Title <hr style="color:#3c3834; width:140px; border:solid 2px; margin-bottom:30px;"></h2>
+<h3>Read more</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="container">
+<div class="main-row">
+<div class="row-child-1">
+<div class="row-child-3">
+<h5>CATOGERY</h5>
+<h2>Article Title <hr style="color:#fff; width:190px; border:solid 2px; margin-bottom:30px;"></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus feugiat mi, a tincidunt lectus.</p>
+</div>
+</div>
+<div class="row-child-2">
+<div class="row-child-4">
+<div class="row-child-5">
+<h3>Catogery</h3>
+<h1>Article Title <hr style="color:#3c3834; width:140px; border:solid 2px; margin-bottom:30px; margin-top:10px;"></h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus feugiat mi, a tincidunt lectus.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="coloumn">
+<div class="main-column">
+<div class="container">
+<div class="coluoumn-2">
+<h4>FULL WIDTH</h4>
+<h2>Large Full Width Section Heading</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus feugiat mi, a tincidunt lectus egestas ut. Duis dignissim sapien, lectus eleifend sit amet.</p>
+</div>
+<div class="button-2">
+<h2>CONTINUE READING</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="container">
+<div class="main-section">
+<div class="section-1">
+<div class="section-1-2">
+<h4>About Us</h4>
+<h2>Meet the team <hr style="color:#fff; width:140px; border:solid 2px; margin-left:110px;"></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<button>more</button>
+</div>
+</div>
+<div class="section-2">
+<div class="section-2-2">
+<h4>Portfolio</h4>
+<h2>See our work<hr style="color:#fff; width:140px; border:solid 2px; margin-left:110px;"></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<button>more</button>
+</div>
+</div>
+<div class="section-3">
+<div class="section-3-3">
+<h4>Contact</h4>
+<h2>Work with us<hr style="color:#fff; width:140px; border:solid 2px; margin-left:110px;"></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<button>more</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article">
+<div class="container">
+<div class="main-article">
+<div class="article-1">
+<div class="article-1-1">
+<img src="images/article-image-1.jpg" alt="img">
+<h1>Article Title</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor</p>
+<h6>Category - Aug 1, 2016</h6>
+</div>
+<div class="article-1-2">
+<div class="article-1-2-1">
+<img src="images/advert.jpg" alt="img">
+</div>
+</div>
+<div class="article-1-2-2">
+<div class="article-1-2-3">
+<img src="images/article-image-2.jpg" alt="img">
+<h1>Article Title</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor</p>
+<h6>Category - Aug 1, 2016</h6>
+</div>
+</div>
+</div>
+<div class="article-2">
+<div class="article-2-1">
+<img src="images/article-image-3.jpg" alt="img">
+<h1>Article Title</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor</p>
+<h6>Category - Aug 1, 2016</h6>
+</div>
+<div class=" article-2-2">
+<div class="article-2-2-1">
+<img src="images/article-image-4.jpg" alt="img">
+<h1>Article Title</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor</p>
+<h6>Category - Aug 1, 2016</h6>
+</div>
+</div>
+<div class="article-2-3">
+<div class="article-2-3-1">
+<img src="images/article-image-5.jpg" alt="img">
+<h1>Article Title</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor</p>
+<h6>Category - Aug 1, 2016</h6>
+</div>
+</div>
+</div>
+<div class="article-3">
+<div class="article-3-1">
+<img src="images/article-image-6.jpg" alt="img">
+<h1>Article Title</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor</p>
+<h6>Category - Aug 1, 2016</h6>
+</div>
+<div class="article-3-2">
+<img src="images/article-image-7.jpg" alt="img">
+<h1>Article Title</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor</p>
+<h6>Category - Aug 1, 2016</h6>
+</div>
+<div class="artical-4">
+<img src="images/article-image-8.jpg" alt="img">
+<h1>Article Title</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor</p>
+<h6>Category - Aug 1, 2016</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="instagram-text">
+<div class="container">
+<div class="main-instagram">
+<h2>Instagram<hr style="color:#b1a492; width:200px; border:solid 1px;"></h2>
+</div>
+</div>
+</div>
+<div class="footer-section">
+<div class="container">
+<div class="main-footer-section">
+<div class="main-footer-1">
+<img src="images/instagram-1.jpg" alt="img">
+</div>
+<div class="main-footer-2">
+<img src="images/instagram-2.jpg" alt="img">
+</div>
+<div class="main-footer-3">
+<img src="images/instagram-3.jpg" alt="img">
+</div>
+<div class="main-footer-4">
+<img src="images/instagram-4.jpg" alt="img">
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="main-footer">
+<div class="copyright">
+<p>Copy 2016
+<strong>cardly</strong>.All right reserved
+</p>
+</div>
+<div class="privecy">
+<p>Privecy policy    I   Terms & Condition
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
